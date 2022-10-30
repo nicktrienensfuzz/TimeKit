@@ -10,9 +10,9 @@ import Foundation
 /// `Day` is a unit of time representing date without a TimeZone.
 public struct Day: Hashable, Codable, ReferenceDateStrideable {
     
-    public var intervalSinceReferenceDate: Int
+    public var intervalSinceReferenceDate: Double
     
-    public init(intervalSinceReferenceDate: Int) {
+    public init(intervalSinceReferenceDate: Double) {
         self.intervalSinceReferenceDate = intervalSinceReferenceDate
     }
 }
