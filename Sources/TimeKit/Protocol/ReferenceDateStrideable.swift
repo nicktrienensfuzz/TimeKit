@@ -7,11 +7,11 @@
 
 import Foundation
 
-public protocol ReferenceDateStrideable: Strideable where Stride == Int {
+public protocol ReferenceDateStrideable: Strideable where Stride == Double {
     
-    var intervalSinceReferenceDate: Int { get }
+    var intervalSinceReferenceDate: Double { get }
     
-    init(intervalSinceReferenceDate: Int)
+    init(intervalSinceReferenceDate: Double)
 }
 
 public extension ReferenceDateStrideable {
