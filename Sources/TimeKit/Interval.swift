@@ -10,9 +10,9 @@ import Foundation
 /// `Interval` represents an interval between components of time, such as` Day`, `Month`, and` Year`.
 public struct Interval<Value: ReferenceDateStrideable>: Hashable {
     
-    public var value: Int
+    public var value: Double
     
-    public init(value: Int) {
+    public init(value: Double) {
         self.value = value
     }
 }
