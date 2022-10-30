@@ -10,9 +10,9 @@ import Foundation
 /// `Year` is a unit of time representing year without a TimeZone.
 public struct Year: Hashable, Codable, ReferenceDateStrideable {
     
-    public var intervalSinceReferenceDate: Int
+    public var intervalSinceReferenceDate: Double
     
-    public init(intervalSinceReferenceDate: Int) {
+    public init(intervalSinceReferenceDate: Double) {
         self.intervalSinceReferenceDate = intervalSinceReferenceDate
     }
 }
